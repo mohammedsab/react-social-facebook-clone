@@ -3,6 +3,8 @@ import { Users } from "../../constants/dummyData";
 import Online from "../online/online";
 
 export default function Rightbar({ profile }) {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
   const HomeRightBar = () => {
     return (
       <>
@@ -46,7 +48,7 @@ export default function Rightbar({ profile }) {
           {Users.map((u) => (
             <div className="rightbarFollowing">
               <img
-                src={u.profilePicture}
+                src={PF + u.profilePicture}
                 alt=""
                 className="rightbarFollowingImg"
               />
