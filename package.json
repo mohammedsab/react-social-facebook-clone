@@ -42,5 +42,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:4040/api"
+  "proxy": "https://socialmediabackend-36cd.onrender.com/api"
 }
